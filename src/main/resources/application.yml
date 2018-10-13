@@ -1,0 +1,7 @@
+
+spring:
+    datasource:
+      url: jdbc:mysql://39.108.85.204:3306/mybatis
+      username: root
+      password: zz123456.ZZ
+      driver-class-name: com.mysql.jdbc.Driver
