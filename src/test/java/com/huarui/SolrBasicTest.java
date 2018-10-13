@@ -23,7 +23,7 @@ import java.util.UUID;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SbSolrApplicationTests {
+public class SolrBasicTest {
 
 	@Autowired
 	private SolrClient solrClient;
