@@ -2,7 +2,9 @@ package com.huarui.entity;
 
 import org.apache.solr.client.solrj.beans.Field;
 
-public class DMember {
+import java.io.Serializable;
+
+public class DMember implements Serializable{
 
     @Field
     private String id;
@@ -54,5 +56,15 @@ public class DMember {
         this.name = name;
         this.age = age;
         this.height = height;
+    }
+
+    @Override
+    public String toString() {
+        return "DMember{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", height=" + height +
+                '}';
     }
 }
