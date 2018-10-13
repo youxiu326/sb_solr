@@ -80,12 +80,15 @@ public class SolrBasicTest {
 	 */
 	@Test
 	public void testInserBatch() {
-		DMember member1 = new DMember(UUID.randomUUID().toString(),"李笑傲",18,45D);
-		DMember member2 = new DMember(UUID.randomUUID().toString(),"dongf ",18,45D);
-		DMember member3 = new DMember(UUID.randomUUID().toString(),"李笑傲",18,45D);
-		DMember member4 = new DMember(UUID.randomUUID().toString(),"李笑傲",18,45D);
+		DMember member1 = new DMember(UUID.randomUUID().toString(),"谁怕谁",46,45D);
+		DMember member2 = new DMember(UUID.randomUUID().toString(),"事实上 ",18,95D);
+		DMember member3 = new DMember(UUID.randomUUID().toString(),"李笑傲",45,56D);
+		DMember member4 = new DMember(UUID.randomUUID().toString(),"我输了",108,45D);
+		DMember member5 = new DMember(UUID.randomUUID().toString(),"哈哈哈了",108,45D);
+		DMember member6 = new DMember(UUID.randomUUID().toString(),"东方不败了",108,45D);
+		DMember member7 = new DMember(UUID.randomUUID().toString(),"华山论剑",998,045D);
 
-		List<DMember> document = Arrays.asList(member1,member2,member3,member4);
+		List<DMember> document = Arrays.asList(member1,member2,member3,member4,member5,member6,member7);
 		try {
 			solrClient.addBeans(document);
 			solrClient.commit();
